@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="x">
+      <div class="y">
+        <div class="z"><input type="text" id="demo" placeholder="0" /></div>
+        <div class="v">
+          <div>
+            <input type="button" value="AC" id="AC" onclick="demo.value=''" />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="DEL"
+              id="DEL"
+              onclick="demo.value=demo.value.toString().slice(0,-1)"
+            />
+          </div>
+          <div>
+            <input type="button" value="%" id="OP" onclick="A4()" />
+          </div>
+          <div>
+            <input type="button" value="/" id="OP" onclick="A3()" />
+          </div>
+          <div><input type="button" value="7" onclick="demo.value+='7'" /></div>
+          <div><input type="button" value="8" onclick="demo.value+='8'" /></div>
+          <div><input type="button" value="9" onclick="demo.value+='9'" /></div>
+          <div>
+            <input type="button" value="*" id="OP" onclick="A2()" />
+          </div>
+          <div><input type="button" value="4" onclick="demo.value+='4'" /></div>
+          <div><input type="button" value="5" onclick="demo.value+='5'" /></div>
+          <div><input type="button" value="6" onclick="demo.value+='6'" /></div>
+          <div>
+            <input type="button" value="-" id="OP" onclick="A1()" />
+          </div>
+          <div><input type="button" value="1" onclick="demo.value+='1'" /></div>
+          <div><input type="button" value="2" onclick="demo.value+='2'" /></div>
+          <div><input type="button" value="3" onclick="demo.value+='3'" /></div>
+          <div>
+            <input type="button" value="+" id="OP" onclick="A0()" />
+          </div>
+          <div><input type="button" value="0" onclick="demo.value+='0'" /></div>
+          <div>
+            <input type="button" value="00" onclick="demo.value+='00'" />
+          </div>
+          <div><input type="button" value="." onclick="demo.value+='.'" /></div>
+
+          <div>
+            <input type="button" value="=" id="OP" onclick="myfunction()" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
