@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 30px;
+  line-height: 1.6;
+}
+
+.section-top {
+  background-image: url(image\3\(project\4\).jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-container {
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 30px;
+  padding-left: 310px;
+}
+
+.text-container .text-small {
+  font-size: 28px;
+}
+
+.text-large {
+  font-size: 40px;
+}
+
+.black-box {
+  text-align: center;
+  background: #000;
+  color: white;
+  font-size: 25px;
+}
+
+.black-box h2 span {
+  font-size: 60px;
+}
+
+.about-container p {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.work {
+  display: grid;
+  padding: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.gird-item {
+  padding-left: 38px;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 320px;
+  height: 420px;
+  border-radius: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.about-container h3 {
+  padding-left: 17px;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  transition: 0.2s ease-in-out;
+}
+.section-bottom {
+  display: flex;
+}
+
+.about-section {
+  background-color: #515603;
+  color: white;
+}
+.contact-section {
+  background-color: #722803;
+  color: white;
+}
+
+.about-section {
+  padding: 35px;
+  width: 50%;
+}
+
+.contact-section {
+  padding: 35px;
+  width: 50%;
+}
+.about-section p {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+footer {
+  font-size: 15px;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    font-size: 10px;
+    line-height: 1;
+    width: 100%;
+  }
+  .work {
+    gap: 6px;
+    padding-left: 13px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .work {
+    gap: 6px;
+    padding-left: 13px;
+  }
+  .gird-item {
+    padding-left: 20px;
+  }
+  .card {
+    padding: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gird-item {
+    padding-left: 0px;
+  }
+  .card {
+    width: 220px;
+    height: 350px;
+  }
+  .image-conatiner img {
+    width: 219px;
+  }
+  .work {
+    display: flex;
+    padding: 15px;
+    margin-left: 10px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .work {
+    display: block;
+    padding: 25px;
+  }
+  .text-container {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .card {
+    width: 320px;
+    height: 350px;
+    padding-top: 35px;
+    margin-left: 15px;
+  }
+  .image-conatiner img {
+    width: 319px;
+  }
+
+  .contact-section {
+    padding: 35px;
+    width: 50%;
+  }
+  .about-section p {
+    margin-top: 10px;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+
+  .contact-section p {
+    margin-top: 10px;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+}
