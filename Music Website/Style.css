@@ -13,6 +13,12 @@
   box-sizing: border-box;
 }
 
+img,
+video {
+  display: block;
+  width: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -23,14 +29,19 @@ header {
   background-color: #270082;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
+}
+
+nav.container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 ul {
@@ -98,7 +109,6 @@ nav ul li {
 .ipad-iphone-img {
   position: relative;
   top: 400px;
-  
 }
 
 .primary-button {
@@ -131,13 +141,12 @@ nav ul li {
   background-color: var(--purple300);
   color: white;
 }
-.video-music video
-{
+.video-music video {
   background-color: #4d2f93;
   margin-top: 0px;
   margin-bottom: 20px;
-  width:100%;
-  height:600px;
+  width: 100%;
+  height: 600px;
 }
 .video-section {
   background-image: url(video.png);
@@ -171,186 +180,141 @@ nav ul li {
 .gift-container {
   display: flex;
   justify-content: space-between;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 16px;
+  gap: 32px;
 }
 
 .gift-img {
   padding-top: 100px;
   /*padding-left: 35px;
     padding-right: 35px;*/
+  flex: 0.4;
 }
 
 .about-gift {
+  flex: 0.6;
   padding-top: 60px;
   line-height: 1cm;
   padding-bottom: 40px;
 }
 
-.link{
+.link {
   display: block;
 }
-.link li{
-    color: #000;
-    padding: 5px 80px;
-    gap:5px;
-    color: white;
-    
+.link li {
+  color: #000;
+  padding: 5px 80px;
+  gap: 5px;
+  color: white;
 }
-.footer-container
-{
+.footer-container {
   background-color: var(--purple500);
-  gap:4px;
- 
+  gap: 4px;
 }
-.footer-links
-{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.footer-links {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.footer-container h4
-{
+.footer-container h4 {
   padding-bottom: 14px;
   border-bottom: 2px solid white;
   margin-bottom: 10px;
 }
-.Bottom-footer
-{
+.Bottom-footer {
   background-color: var(--purple300);
   padding: 20px;
   text-align: center;
   color: white;
 }
 
-@media screen and (max-width:1024px)
-{
-  .link li{
+@media screen and (max-width: 1024px) {
+  .link li {
     padding: 5px 60px;
-    gap:5px;  
+    gap: 5px;
+  }
 }
 
-.video-music video
-{
-  margin-top: 0px;
-  width:1024px;
-  height:600px;
-}
-
-}
-
-@media screen and (max-width:768px)
-{
-  .ipad-phone-img img{
-    position: relative;
-    top:90px;
-    width:700px;
-    z-index: 30;
-  }
-  .mac-img img
-  {
-   width:700px;
-  }
-  .gift-section
-  {
-    width:700px;
-  }
+@media screen and (max-width: 768px) {
   .music-section {
     padding-top: 80px;
     padding-left: 20px;
     gap: 20px;
   }
-  
-  .link li{
+
+  .link li {
     padding: 5px 20px;
-    gap:5px;  
-}
-.about-gift {
-  padding-right: 0px;
-  line-height: 0.5cm;
-  padding-right: 4px;
-}
-.gift-container {
-  display: flex;
-  gap:40px;
-
- 
-}
-.gift-img img
-{
-  width:300px;
-}
-.video-section {
-  padding: 0 40px;
-  min-height: 700px;
-}
-.ipad-iphone-img {
-  top: 50px;
-  z-index: 550;
-}
-.about-music {
-  padding-top: 500px;
-  padding-left: 30px;
-  padding-right:30px;
-  gap: 30px;
-}
-
-.video-music video
-{
-  margin-top: 0px;
-  width:768px;
-  height:600px;
-}
-
-}
-
-@media screen and (max-width:520px)
-{
-.video-music video
-{
-  margin-top: 0px;
-  width:425px;
-  height:600px;
-}
-
-.gift-container {
-  display: flex;
- padding: 0;
-}
-
-.mac-img img
-  {
-   width:425px;
+    gap: 5px;
   }
-  .ipad-phone-img img{
-
-    width:425px;
-    
+  .about-gift {
+    padding-right: 0px;
+    line-height: 0.5cm;
+    padding-right: 4px;
   }
+  .gift-container {
+    display: flex;
+    gap: 40px;
+  }
+  .gift-img img {
+    width: 300px;
+  }
+  .video-section {
+    padding: 0 40px;
+    min-height: 700px;
+  }
+  .ipad-iphone-img {
+    top: 50px;
+    z-index: 100;
+  }
+  .about-music {
+    padding-top: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 520px) {
   li {
     color: white;
     padding: 4px 3px;
     /*padding: 16px;*/
   }
-  .gift-section
-  {
-    width:425px;
-  }
+
   .gift-container {
     display: block;
+  }
+  .gift-container img {
+    margin: 0 auto;
   }
   .about-gift {
     padding-left: 7px;
   }
-  .hero-section .contains p 
-  {
+  .hero-section .contains p {
     font-size: small;
   }
   .hero-section .contains h3 {
     font-size: 20px;
   }
-
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+@media screen and (max-width: 420px) {
+  .about-gift {
+    padding-left: 7px;
+  }
+  nav.container {
+    display: block;
+  }
+  nav.container .logo {
+    text-align: center;
+  }
+  nav.container ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
