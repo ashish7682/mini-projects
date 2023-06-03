@@ -42,6 +42,7 @@ nav.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 ul {
@@ -57,18 +58,25 @@ header {
 li {
   color: white;
   padding: 16px 22px;
+  text-decoration: none;
   /*padding: 16px;*/
 }
 .logo {
   padding: 16px 60px;
   font-family: sans-serif;
   font-size: 20px;
+  
 }
 nav ul li:hover {
   background-color: red;
   color: white;
   transition: 0.4s ease-in;
 }
+.active
+{
+  background-color: red;
+}
+
 nav ul li {
   border-bottom: 2px solid transparent;
 }
@@ -317,4 +325,17 @@ nav ul li {
     justify-content: center;
     padding: 10px 0;
   }
+  .about-music {
+    padding-top: 180px;
+    
+  }
+  .gift-img {
+    padding-top:90px;
+    
+  }
+  li a
+  {
+    text-decoration: none;
+  }
+
 }
