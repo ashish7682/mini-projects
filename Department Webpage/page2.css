@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(scenry.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 730px;
+    color: chartreuse;
+    margin: 20px;
+}
+.x{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    display: inline;
+    margin: 20px;
+
+}
+li a{
+ text-decoration: none;
+ color: chartreuse;
+ border: 2px solid transparent;
+ padding: 3px 8px;
+ border-radius: 20px;
+ transition: 1s;
+
+}
+a:hover{
+    background-color:chartreuse;
+    color: black;
+}
+.y{
+    background-color: chartreuse;
+    color:black;
+}
+pre{
+    margin-top: 100px;
+    font-size: 45px;
+    color: #000;
+    margin-left: 0;
+}
+p{
+    font-size: 20px;
+    color:blue;
+}
+.z{
+    text-align: left;
+    color:chartreuse;
+    font-size: 20px;
+}
+.w{
+    background-color: chartreuse;
+    color: black;
+}
